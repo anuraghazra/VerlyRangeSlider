@@ -12,17 +12,14 @@ Download
 git clone https://github.com/anuraghazra/VerlyRangeSlider.git
 ```
 
-add verly.js link to your head
+OR
+
+copy paste this code to your page header
 
 ```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/anuraghazra/VerlyRangeSlider@v1.0.0/src/style.css" />
 <script src="https://cdn.jsdelivr.net/gh/anuraghazra/Verly.js@v1.1.3/dist/verly.bundle.js"></script>
-```
-
-import the VerlyRange.js and style.css
-
-```html
-<link rel="stylesheet" href="./src/style.css" />
-<script src="./src/VerlyRange.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/anuraghazra/VerlyRangeSlider@v1.0.0/src/VerlyRange.js"></script>
 ```
 
 basic markup
