@@ -37,7 +37,8 @@ basic markup
 in your js file
 
 ```javascript
-VerlyRange("my-slider");
+// id, color
+VerlyRange('my-slider', '#655ecf');
 ```
 
 ---
