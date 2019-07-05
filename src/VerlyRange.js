@@ -20,18 +20,6 @@ function VerlyRange(id, color) {
   rope.setGravity(new Vector(0, 0.3));
   rope.pin(lastIndex);
 
-  // doing this because of implementation limitations of Verly.js
-  rope.updateContrains = () => {
-    for (let i = 0; i < rope.points.length; i++) {
-      let point = rope.points[i];
-      // groundFriction reset
-      point.groundFriction = 1.0;
-      if (point.pos.x < point.radius) point.pos.x = point.radius
-      if (point.pos.y < point.radius) point.pos.y = point.radius;
-      if (point.pos.x > width - point.radius) point.pos.x = width - point.radius;
-      if (point.pos.y > height - point.radius) point.pos.y = height - this.radius;
-    }
-  }
   // rendering
   rope.renderSticks = () => {
     for (let i = 0; i < rope.sticks.length; i++) {
@@ -39,7 +27,7 @@ function VerlyRange(id, color) {
       ctx.beginPath();
       ctx.strokeStyle = color;
       ctx.lineWidth = 10;
-      ctx.lineCap = 'round'
+      ctx.lineCap = 'round';
       ctx.moveTo(stick.startPoint.pos.x, stick.startPoint.pos.y);
       ctx.lineTo(stick.endPoint.pos.x, stick.endPoint.pos.y);
       ctx.stroke();
