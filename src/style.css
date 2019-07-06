@@ -1,27 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
-body, html {
-  font-family: 'Francois One', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #f55693
-}
-
 canvas { position: absolute }
 
-.wrapper {
-  margin: 50px auto;
-  max-width: 980px;
-}
-
-section.all-sliders {
-  width: 100%;
-  float: left;
-}
-
-.slidecontainer {
+.slider-container {
   width: 50%;
   float: left;
   margin: 80px 10px;

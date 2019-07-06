@@ -24,9 +24,29 @@
   </script>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0 20px;
-    } 
+    }
+    
+    body, html {
+      font-family: 'Francois One', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #f55693
+    }
+
+    .wrapper {
+      margin: 50px auto;
+      max-width: 980px;
+    }
+
+    section.all-sliders {
+      width: 100%;
+      float: left;
+    }
   </style>
 </head>
 
@@ -38,22 +58,22 @@
     <h1>Verly Range Slider</h1>
 
     <section class="all-sliders">
-      <label class="slidecontainer first">
+      <label class="slider-container first">
         <span>Juicy Purple</span>
         <input class="slider" id="range-slider" type="range" min="1" step="0.01" max="100" value="80">
       </label>
   
-      <label class="slidecontainer second">
+      <label class="slider-container second">
         <span>Lovely Pink</span>
         <input class="slider" id="range-slider2" type="range" min="1" step="0.01" max="100" value="20">
       </label>
   
-      <label class="slidecontainer third">
+      <label class="slider-container third">
         <span>Veg Green</span>
         <input class="slider" id="range-slider3" type="range" min="1" step="0.01" max="100" value="90">
       </label>
   
-      <label class="slidecontainer fourth">
+      <label class="slider-container fourth">
         <span>Awesome Blue</span>
         <input class="slider" id="range-slider4" type="range" min="1" step="0.01" max="100" value="20">
       </label>
