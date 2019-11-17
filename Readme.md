@@ -2,6 +2,8 @@
 
 Range sliders with some verlet physics magic!
 
+Checkout [Verly Range Slider's Case Study](https://anuraghazra.github.io/case-studies/verly-range-slider).
+
 ![Verly Range Slider](./assets/screenshot.png)
 
 ## Usage
